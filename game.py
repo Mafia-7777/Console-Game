@@ -110,7 +110,16 @@ while 1 < 2:
                 python = "t"
                 print('You Now Have A Python')
     
-
+    if inp == "buy dog":
+        if dog == "t":
+            print('You Have A Dog Already')
+        else:
+            if dogcost > points:
+                ned = dogcost - points
+                print(f"You Do Not Have The Money To Buy A Dog, Needed {ned}")
+            else:
+                dog = "t"
+                print('You Now Have A Dog :)')
 
     if inp == "u":
         if upcost > points:
